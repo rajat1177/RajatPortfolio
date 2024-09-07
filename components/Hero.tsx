@@ -58,7 +58,7 @@ A JOURNEY THROUGH INNOVATION
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-          Hi! I'm Rajat, a passionate web developer.
+            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
           </p>
 
           <a href="#about">
