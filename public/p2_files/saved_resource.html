@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<!-- saved from url=(0164)https://bc3cb073394c5cc3f3b8ba178077c6d773a5026e.miniapps-webapps.picsart.com/?platform_version=v7&sid=ce923792-aa4c-4415-b53a-90397c66487c&platform=web&theme=light -->
+<html lang="en" class="light tab-disabled" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="icon" href="https://bc3cb073394c5cc3f3b8ba178077c6d773a5026e.miniapps-webapps.picsart.com/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#000000">
+<title>Picsart Miniapp</title>
+<script type="text/javascript">
+      const query = window.location.search;
+      const params = new URLSearchParams(query);
+      const currentTheme = params.get('theme');
+      if (currentTheme) {
+        const html = document.querySelector('html');
+        ['dark', 'light'].forEach(classname => {
+          html.classList.remove(classname);
+        });
+        html.classList.add(currentTheme);
+      }
+    </script>
+<style>
+      html, body {
+        -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+        overscroll-behavior: none; /* Prevents scroll bubbling */
+        height: 100%;
+        overflow: hidden;
+        touch-action: none;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      #root {
+        height: 100%;
+      }
+    </style>
+<script>
+      // Disable zoom on mouse wheel event
+      window.addEventListener('wheel', function(e) {
+        if (e.ctrlKey || e.metaKey) {
+          e.preventDefault();
+        }
+      }, { passive: false });
+    </script>
+<script type="module" crossorigin="" src="./index-BxMWm5Z4.js.download"></script>
+<style data-jss="" data-meta="gen-ai, Unthemed">
+html {
+  font-family: Picsart-Fonts, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, Helvetica, Arabic, sans-serif;
+}
+@font-face {
+  src: local("Gilroy-Thin");
+  src: url("https://cdn140.picsart.com/38281535162655980605.woff") format('woff');
+  src: url("https://cdn140.picsart.com/66639402799341365665.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-ThinItalic");
+  src: url("https://cdn140.picsart.com/95132097997672780006.woff") format('woff');
+  src: url("https://cdn140.picsart.com/49126424799030180537.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-UltraLight");
+  src: url("https://cdn140.picsart.com/49935397778933361391.woff") format('woff');
+  src: url("https://cdn140.picsart.com/49935397778933361391.woff") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-UltraLightItalic");
+  src: url("https://cdn140.picsart.com/33301619378285557787.woff") format('woff');
+  src: url("https://cdn140.picsart.com/33301619378285557787.woff") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-Light");
+  src: url("https://cdn140.picsart.com/95331006284270664783.woff") format('woff');
+  src: url("https://cdn140.picsart.com/70508065077428789025.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-LightItalic");
+  src: url("https://cdn140.picsart.com/49759505544048891136.woff") format('woff');
+  src: url("https://cdn140.picsart.com/78466976049360945564.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-Regular");
+  src: url("https://cdn140.picsart.com/67495207039426567603.woff") format('woff');
+  src: url("https://cdn140.picsart.com/43823716564166265631.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-RegularItalic");
+  src: url("https://cdn140.picsart.com/15219032925171359633.woff") format('woff');
+  src: url("https://cdn140.picsart.com/08532218230872496735.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-Medium");
+  src: url("https://cdn140.picsart.com/21141070680110120308.woff") format('woff');
+  src: url("https://cdn140.picsart.com/67914239187346587316.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-MediumItalic");
+  src: url("https://cdn140.picsart.com/61093264704757982896.woff") format('woff');
+  src: url("https://cdn140.picsart.com/82712100789938804480.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-SemiBold");
+  src: url("https://cdn140.picsart.com/11783960151644825438.woff") format('woff');
+  src: url("https://cdn140.picsart.com/11783960151644825438.woff") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-SemiBoldItalic");
+  src: url("https://cdn140.picsart.com/25120219760730098498.woff") format('woff');
+  src: url("https://cdn140.picsart.com/25120219760730098498.woff") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-Bold");
+  src: url("https://cdn140.picsart.com/29363190554400305654.woff") format('woff');
+  src: url("https://cdn140.picsart.com/29363190554400305654.woff") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-BoldItalic");
+  src: url("https://cdn140.picsart.com/88259155622864238943.woff") format('woff');
+  src: url("https://cdn140.picsart.com/48552049507639887229.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-ExtraBold");
+  src: url("https://cdn140.picsart.com/09299983129684434707.woff") format('woff');
+  src: url("https://cdn140.picsart.com/81192957029258005704.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-ExtraBoldItalic");
+  src: url("https://cdn140.picsart.com/47088833008701832357.woff") format('woff');
+  src: url("https://cdn140.picsart.com/68412285889232005274.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-Black");
+  src: url("https://cdn140.picsart.com/53910000588793157256.woff") format('woff');
+  src: url("https://cdn140.picsart.com/87821703128058655354.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-BlackItalic");
+  src: url("https://cdn140.picsart.com/77918190375531961686.woff") format('woff');
+  src: url("https://cdn140.picsart.com/90436717488837371347.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-Heavy");
+  src: url("https://cdn140.picsart.com/95612227858248821755.woff") format('woff');
+  src: url("https://cdn140.picsart.com/23727583559134230022.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: normal;
+  font-weight: 1000;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+@font-face {
+  src: local("Gilroy-HeavyItalic");
+  src: url("https://cdn140.picsart.com/14948005683107720847.woff") format('woff');
+  src: url("https://cdn140.picsart.com/01762284817722241268.woff2") format('woff2');
+  font-family: Picsart-Fonts;
+  font-style: italic;
+  font-weight: 1000;
+  font-display: swap;
+  unicode-range: U+0020—007F;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: -webkit-fill-available;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior: none;
+  font-feature-settings: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+}
+iframe {
+  border: none;
+  outline: none;
+}
+button {
+  border: none;
+  background: none;
+}
+input, textarea, select {
+  border: none;
+  outline: none;
+  background: none;
+}
+input, select {
+  -webkit-appearance: none;
+}
+input, button, textarea, select {
+  font-family: inherit;
+}
+:root {
+  --radius-0: 0px;
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-22: 22px;
+  --radius-24: 24px;
+  --spacing-0: 0px;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --easing-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --timings-fast: 100ms;
+  --timings-long: 1000ms;
+  --easing-bounce: cubic-bezier(0.5, -0.4, 0.55, 1.4);
+  --easing-linear: cubic-bezier(0, 0, 1, 1);
+  --radius-circle: 50%;
+  --timings-heavy: 2000ms;
+  --easing-ease-in: cubic-bezier(0.42, 0, 1, 1);
+  --timings-medium: 500ms;
+  --easing-ease-out: cubic-bezier(0, 0, 0.58, 1);
+  --timings-default: 300ms;
+  --easing-practical: cubic-bezier(0.3, 0.15, 0.5, 1);
+  --easing-expressive: cubic-bezier(0.5, 0.05, 0.3, 1);
+  --tab-outline-color: #656BFC;
+  --easing-ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+  --typography-1-font-size: 8px;
+  --typography-2-font-size: 10px;
+  --typography-3-font-size: 12px;
+  --typography-4-font-size: 14px;
+  --typography-5-font-size: 16px;
+  --typography-6-font-size: 20px;
+  --typography-7-font-size: 24px;
+  --typography-8-font-size: 30px;
+  --typography-9-font-size: 36px;
+  --typography-10-font-size: 42px;
+  --typography-11-font-size: 60px;
+  --typography-1-line-height: 10px;
+  --typography-2-line-height: 14px;
+  --typography-3-line-height: 16px;
+  --typography-4-line-height: 20px;
+  --typography-5-line-height: 24px;
+  --typography-6-line-height: 28px;
+  --typography-7-line-height: 32px;
+  --typography-8-line-height: 36px;
+  --typography-9-line-height: 48px;
+  --typography-10-line-height: 50px;
+  --typography-11-line-height: 72px;
+}
+:root.light {
+  --texts-base: #000000;
+  --texts-tint-1: #4c4c4c;
+  --texts-tint-2: #808080;
+  --texts-tint-3: #999999;
+  --texts-negative: #000000;
+  --texts-positive: #ffffff;
+  --backgrounds-base: #FCFCFC;
+  --shadows-tint-1-x: 0px;
+  --shadows-tint-1-y: 0px;
+  --shadows-tint-2-x: 0px;
+  --shadows-tint-2-y: 0px;
+  --shadows-tint-3-x: 0px;
+  --shadows-tint-3-y: 0px;
+  --backgrounds-panel: #f2f2f299;
+  --statuses-disabled: 0.32;
+  --backgrounds-tint-1: #f7f7f7;
+  --backgrounds-tint-2: #f2f2f2;
+  --backgrounds-tint-3: #e8e8e8;
+  --backgrounds-tint-4: #dedede;
+  --backgrounds-tint-5: #d4d4d4;
+  --backgrounds-tint-6: #c9c9c9;
+  --markets-base-action: #B995F3;
+  --markets-base-active: #EDEDED;
+  --markets-text-action: #5A00EE;
+  --markets-text-active: #000000;
+  --premium-base-action: #0E5957;
+  --premium-base-active: #158380;
+  --premium-text-action: #ffffff;
+  --premium-text-active: #ffffff;
+  --shadows-tint-1-blur: 16px;
+  --shadows-tint-2-blur: 16px;
+  --shadows-tint-3-blur: 16px;
+  --backgrounds-negative: #000000;
+  --backgrounds-positive: #ffffff;
+  --controls-text-action: #4D4D4D;
+  --controls-text-active: #000000;
+  --markets-base-default: #E7DCF9;
+  --markets-text-default: #5A00EE;
+  --premium-base-default: #158380;
+  --premium-text-default: #ffffff;
+  --shadows-tint-1-color: #00000024;
+  --shadows-tint-2-color: #00000038;
+  --shadows-tint-3-color: #00000061;
+  --controls-caret-action: #5A00EE;
+  --controls-caret-active: #5A00EE;
+  --controls-text-default: #616161;
+  --controls-value-action: #4D4D4D;
+  --controls-value-active: #000000;
+  --shadows-tint-1-spread: 0px;
+  --shadows-tint-2-spread: 0px;
+  --shadows-tint-3-spread: 0px;
+  --accents-primary-tint-1: #f40bf4;
+  --accents-primary-tint-2: #ec46ec;
+  --accents-primary-tint-3: #ed78ed;
+  --accents-primary-tint-4: #f0a8f0;
+  --accents-primary-tint-5: #f7d4f7;
+  --accents-primary-tint-6: #faeafa;
+  --controls-border-action: #E0E0E0;
+  --controls-border-active: #E0E0E0;
+  --controls-caret-default: #5A00EE;
+  --controls-value-default: #616161;
+  --backgrounds-gradient-up: linear-gradient(360deg, #fcfcfccc 0%, transparent 100%);
+  --backgrounds-transparent: #00000085;
+  --controls-border-default: #E0E0E0;
+  --accents-secondary-tint-1: #680aff;
+  --accents-secondary-tint-2: #7a2ff4;
+  --accents-secondary-tint-3: #9a63f2;
+  --accents-secondary-tint-4: #b995f3;
+  --accents-secondary-tint-5: #d8c5f7;
+  --accents-secondary-tint-6: #e7dcf9;
+  --controls-end-icon-action: #4D4D4D;
+  --controls-end-icon-active: #000000;
+  --backgrounds-gradient-down: linear-gradient(180deg, #fcfcfccc 0%, transparent 100%);
+  --backgrounds-gradient-left: linear-gradient(90deg, #FCFCFC 0%, transparent 100%);
+  --controls-end-icon-default: #616161;
+  --absolute-black-base-action: #313131;
+  --absolute-black-base-active: #000000;
+  --absolute-black-text-action: #ffffff;
+  --absolute-black-text-active: #ffffff;
+  --absolute-white-base-action: #ECECEC;
+  --absolute-white-base-active: #ffffff;
+  --absolute-white-text-action: #000000;
+  --absolute-white-text-active: #000000;
+  --backgrounds-gradient-right: linear-gradient(270deg, #FCFCFC 0%, transparent 100%);
+  --controls-background-action: #F7F7F7;
+  --controls-background-active: #EEEEEE;
+  --controls-start-icon-action: #4D4D4D;
+  --controls-start-icon-active: #000000;
+  --markets-base-active-action: #D9D9D9;
+  --markets-text-active-action: #000000;
+  --premium-base-active-active: #0E5957;
+  --premium-text-active-action: #ffffff;
+  --statuses-error-base-action: #9D0007;
+  --statuses-error-base-active: #D31E2A;
+  --statuses-error-text-action: #ffffff;
+  --statuses-error-text-active: #ffffff;
+  --absolute-black-base-default: #000000;
+  --absolute-black-text-default: #ffffff;
+  --absolute-white-base-default: #ffffff;
+  --absolute-white-text-default: #000000;
+  --accents-primary-base-action: #920792;
+  --accents-primary-base-active: #C209C1;
+  --accents-primary-text-action: #ffffff;
+  --accents-primary-text-active: #ffffff;
+  --controls-background-default: #FFFFFF;
+  --controls-placeholder-action: #929292;
+  --controls-placeholder-active: #929292;
+  --controls-start-icon-default: #616161;
+  --controls-text-active-action: #616161;
+  --statuses-error-base-default: #D31E2A;
+  --statuses-error-text-default: #ffffff;
+  --accents-primary-base-default: #C209C1;
+  --accents-primary-text-default: #ffffff;
+  --accents-tertiary-base-action: #B4B4B4;
+  --accents-tertiary-base-active: #f2f2f2;
+  --accents-tertiary-text-action: #000000;
+  --accents-tertiary-text-active: #000000;
+  --controls-caret-active-action: #5A00EE;
+  --controls-placeholder-default: #929292;
+  --controls-slider-thumb-action: #F1F1F1;
+  --controls-slider-thumb-active: #FEFEFE;
+  --controls-slider-track-action: #000000;
+  --controls-slider-track-active: #000000;
+  --controls-value-active-action: #616161;
+  --statuses-success-base-action: #0E5A18;
+  --statuses-success-base-active: #158423;
+  --statuses-success-text-action: #ffffff;
+  --statuses-success-text-active: #ffffff;
+  --statuses-warning-base-action: #C9760E;
+  --statuses-warning-base-active: #FE9D24;
+  --statuses-warning-text-action: #000000;
+  --statuses-warning-text-active: #000000;
+  --accents-secondary-base-action: #3f00a3;
+  --accents-secondary-base-active: #5A00EE;
+  --accents-secondary-text-action: #ffffff;
+  --accents-secondary-text-active: #ffffff;
+  --accents-tertiary-base-default: #f2f2f2;
+  --accents-tertiary-text-default: #000000;
+  --backgrounds-canvas-back-layer: #ededed;
+  --controls-border-active-action: #E0E0E0;
+  --controls-slider-thumb-default: #FEFEFE;
+  --controls-slider-track-default: #000000;
+  --statuses-negative-base-action: #787878;
+  --statuses-negative-base-active: #000000;
+  --statuses-negative-text-action: #ffffff;
+  --statuses-negative-text-active: #ffffff;
+  --statuses-positive-base-action: #B4B4B4;
+  --statuses-positive-base-active: #ffffff;
+  --statuses-positive-text-action: #000000;
+  --statuses-positive-text-active: #000000;
+  --statuses-success-base-default: #158423;
+  --statuses-success-text-default: #ffffff;
+  --statuses-warning-base-default: #FE9D24;
+  --statuses-warning-text-default: #000000;
+  --accents-secondary-base-default: #5A00EE;
+  --accents-secondary-text-default: #ffffff;
+  --statuses-highlight-base-action: #008685;
+  --statuses-highlight-base-active: #00C5C3;
+  --statuses-highlight-text-action: #000000;
+  --statuses-highlight-text-active: #000000;
+  --statuses-negative-base-default: #000000;
+  --statuses-negative-text-default: #ffffff;
+  --statuses-positive-base-default: #ffffff;
+  --statuses-positive-text-default: #000000;
+  --controls-end-icon-active-action: #616161;
+  --externalBrand-apple-base-action: #1a1a1a;
+  --externalBrand-apple-base-active: #000000;
+  --externalBrand-apple-text-action: #ffffff;
+  --externalBrand-apple-text-active: #ffffff;
+  --statuses-highlight-base-default: #00C5C3;
+  --statuses-highlight-text-default: #000000;
+  --externalBrand-apple-base-default: #000000;
+  --externalBrand-apple-text-default: #ffffff;
+  --externalBrand-google-base-action: #c2c2c2;
+  --externalBrand-google-base-active: #f2f2f2;
+  --externalBrand-google-text-action: #1f1f1f;
+  --externalBrand-google-text-active: #1f1f1f;
+  --statuses-information-base-action: #3D00A2;
+  --statuses-information-base-active: #5A00EE;
+  --statuses-information-text-action: #ffffff;
+  --statuses-information-text-active: #ffffff;
+  --absolute-black-base-action-active: #313131;
+  --absolute-black-text-active-action: #ffffff;
+  --absolute-white-base-action-active: #ECECEC;
+  --absolute-white-text-active-action: #000000;
+  --controls-background-active-action: #F7F7F7;
+  --controls-start-icon-active-action: #616161;
+  --externalBrand-google-base-default: #f2f2f2;
+  --externalBrand-google-text-default: #1f1f1f;
+  --statuses-error-base-active-action: #9D0007;
+  --statuses-error-text-active-action: #ffffff;
+  --statuses-information-base-default: #5A00EE;
+  --statuses-information-text-default: #ffffff;
+  --accents-primary-base-active-action: #920792;
+  --accents-primary-text-active-action: #ffffff;
+  --controls-placeholder-active-action: #929292;
+  --externalBrand-facebook-base-action: #0050d1;
+  --externalBrand-facebook-base-active: #0766ff;
+  --externalBrand-facebook-text-action: #ffffff;
+  --externalBrand-facebook-text-active: #ffffff;
+  --accents-tertiary-base-active-action: #B4B4B4;
+  --accents-tertiary-text-active-action: #000000;
+  --controls-slider-thumb-active-action: #F1F1F1;
+  --controls-slider-track-active-action: #000000;
+  --externalBrand-facebook-base-default: #0766ff;
+  --externalBrand-facebook-text-default: #ffffff;
+  --statuses-success-base-active-action: #0E5A18;
+  --statuses-success-text-active-action: #ffffff;
+  --statuses-warning-base-active-action: #C9760E;
+  --statuses-warning-text-active-action: #000000;
+  --accents-secondary-base-active-action: #3f00a3;
+  --accents-secondary-text-active-action: #ffffff;
+  --statuses-negative-base-active-action: #787878;
+  --statuses-negative-text-active-action: #ffffff;
+  --statuses-positive-base-active-action: #B4B4B4;
+  --statuses-positive-text-active-action: #000000;
+  --statuses-highlight-base-active-action: #008685;
+  --statuses-highlight-text-active-action: #000000;
+  --externalBrand-apple-base-active-active: #1a1a1a;
+  --externalBrand-apple-text-active-action: #ffffff;
+  --externalBrand-google-base-active-active: #c2c2c2;
+  --externalBrand-google-text-active-action: #1f1f1f;
+  --statuses-information-base-active-action: #3D00A2;
+  --statuses-information-text-active-action: #ffffff;
+  --externalBrand-facebook-base-active-active: #0050d1;
+  --externalBrand-facebook-text-active-action: #ffffff;
+}
+:root.dark {
+  --texts-base: #ffffff;
+  --texts-tint-1: #b3b3b3;
+  --texts-tint-2: #808080;
+  --texts-tint-3: #666666;
+  --texts-negative: #ffffff;
+  --texts-positive: #000000;
+  --backgrounds-base: #121212;
+  --shadows-tint-1-x: 0px;
+  --shadows-tint-1-y: 0px;
+  --shadows-tint-2-x: 0px;
+  --shadows-tint-2-y: 0px;
+  --shadows-tint-3-x: 0px;
+  --shadows-tint-3-y: 0px;
+  --backgrounds-panel: #26262699;
+  --statuses-disabled: 0.32;
+  --backgrounds-tint-1: #1c1c1c;
+  --backgrounds-tint-2: #262626;
+  --backgrounds-tint-3: #303030;
+  --backgrounds-tint-4: #454545;
+  --backgrounds-tint-5: #595959;
+  --backgrounds-tint-6: #6e6e6e;
+  --markets-base-action: #854BE2;
+  --markets-base-active: #303030;
+  --markets-text-action: #FFFFFF;
+  --markets-text-active: #ffffff;
+  --premium-base-action: #0E5957;
+  --premium-base-active: #158380;
+  --premium-text-action: #ffffff;
+  --premium-text-active: #ffffff;
+  --shadows-tint-1-blur: 16px;
+  --shadows-tint-2-blur: 16px;
+  --shadows-tint-3-blur: 16px;
+  --backgrounds-negative: #ffffff;
+  --backgrounds-positive: #000000;
+  --controls-text-action: #CCCCCC;
+  --controls-text-active: #FFFFFF;
+  --markets-base-default: #4B2588;
+  --markets-text-default: #FFFFFF;
+  --premium-base-default: #158380;
+  --premium-text-default: #ffffff;
+  --shadows-tint-1-color: #00000024;
+  --shadows-tint-2-color: #00000038;
+  --shadows-tint-3-color: #00000061;
+  --controls-caret-action: #BD99F8;
+  --controls-caret-active: #BD99F8;
+  --controls-text-default: #B3B3B3;
+  --controls-value-action: #CCCCCC;
+  --controls-value-active: #FFFFFF;
+  --shadows-tint-1-spread: 0px;
+  --shadows-tint-2-spread: 0px;
+  --shadows-tint-3-spread: 0px;
+  --accents-primary-tint-1: #e543aa;
+  --accents-primary-tint-2: #d6389c;
+  --accents-primary-tint-3: #b12b7f;
+  --accents-primary-tint-4: #832561;
+  --accents-primary-tint-5: #591d43;
+  --accents-primary-tint-6: #431934;
+  --controls-border-action: #3B3B3B;
+  --controls-border-active: #3B3B3B;
+  --controls-caret-default: #BD99F8;
+  --controls-value-default: #B3B3B3;
+  --backgrounds-gradient-up: linear-gradient(360deg, #121212cc 0%, transparent 100%);
+  --backgrounds-transparent: #00000099;
+  --controls-border-default: #3B3B3B;
+  --accents-secondary-tint-1: #af83f6;
+  --accents-secondary-tint-2: #a273ed;
+  --accents-secondary-tint-3: #854be2;
+  --accents-secondary-tint-4: #6929d1;
+  --accents-secondary-tint-5: #5526a1;
+  --accents-secondary-tint-6: #4b2588;
+  --controls-end-icon-action: #CCCCCC;
+  --controls-end-icon-active: #FFFFFF;
+  --backgrounds-gradient-down: linear-gradient(180deg, #121212cc 0%, transparent 100%);
+  --backgrounds-gradient-left: linear-gradient(90deg, #121212 0%, transparent 100%);
+  --controls-end-icon-default: #B3B3B3;
+  --absolute-black-base-action: #313131;
+  --absolute-black-base-active: #000000;
+  --absolute-black-text-action: #ffffff;
+  --absolute-black-text-active: #ffffff;
+  --absolute-white-base-action: #ECECEC;
+  --absolute-white-base-active: #ffffff;
+  --absolute-white-text-action: #000000;
+  --absolute-white-text-active: #000000;
+  --backgrounds-gradient-right: linear-gradient(270deg, #121212 0%, transparent 100%);
+  --controls-background-action: #212121;
+  --controls-background-active: #2A2A2A;
+  --controls-start-icon-action: #CCCCCC;
+  --controls-start-icon-active: #FFFFFF;
+  --markets-base-active-action: #454545;
+  --markets-text-active-action: #ffffff;
+  --premium-base-active-active: #0E5957;
+  --premium-text-active-action: #ffffff;
+  --statuses-error-base-action: #A52343;
+  --statuses-error-base-active: #F84973;
+  --statuses-error-text-action: #000000;
+  --statuses-error-text-active: #000000;
+  --absolute-black-base-default: #000000;
+  --absolute-black-text-default: #ffffff;
+  --absolute-white-base-default: #ffffff;
+  --absolute-white-text-default: #000000;
+  --accents-primary-base-action: #9E3D7A;
+  --accents-primary-base-active: #E859B4;
+  --accents-primary-text-action: #000000;
+  --accents-primary-text-active: #000000;
+  --controls-background-default: #000000;
+  --controls-placeholder-action: #737373;
+  --controls-placeholder-active: #737373;
+  --controls-start-icon-default: #B3B3B3;
+  --controls-text-active-action: #B3B3B3;
+  --statuses-error-base-default: #F84973;
+  --statuses-error-text-default: #000000;
+  --accents-primary-base-default: #E859B4;
+  --accents-primary-text-default: #000000;
+  --accents-tertiary-base-action: #080808;
+  --accents-tertiary-base-active: #2F2F2F;
+  --accents-tertiary-text-action: #ffffff;
+  --accents-tertiary-text-active: #ffffff;
+  --controls-caret-active-action: #BD99F8;
+  --controls-placeholder-default: #737373;
+  --controls-slider-thumb-action: #F1F1F1;
+  --controls-slider-thumb-active: #FFFFFF;
+  --controls-slider-track-action: #FFFFFF;
+  --controls-slider-track-active: #FFFFFF;
+  --controls-value-active-action: #B3B3B3;
+  --statuses-success-base-action: #45A455;
+  --statuses-success-base-active: #66F17C;
+  --statuses-success-text-action: #000000;
+  --statuses-success-text-active: #000000;
+  --statuses-warning-base-action: #D69200;
+  --statuses-warning-base-active: #FFC13C;
+  --statuses-warning-text-action: #000000;
+  --statuses-warning-text-active: #000000;
+  --accents-secondary-base-action: #8168A9;
+  --accents-secondary-base-active: #BD99F8;
+  --accents-secondary-text-action: #000000;
+  --accents-secondary-text-active: #000000;
+  --accents-tertiary-base-default: #2F2F2F;
+  --accents-tertiary-text-default: #ffffff;
+  --backgrounds-canvas-back-layer: #262626;
+  --controls-border-active-action: #3B3B3B;
+  --controls-slider-thumb-default: #FFFFFF;
+  --controls-slider-track-default: #FFFFFF;
+  --statuses-negative-base-action: #B4B4B4;
+  --statuses-negative-base-active: #ffffff;
+  --statuses-negative-text-action: #000000;
+  --statuses-negative-text-active: #000000;
+  --statuses-positive-base-action: #787878;
+  --statuses-positive-base-active: #000000;
+  --statuses-positive-text-action: #ffffff;
+  --statuses-positive-text-active: #ffffff;
+  --statuses-success-base-default: #66F17C;
+  --statuses-success-text-default: #000000;
+  --statuses-warning-base-default: #FFC13C;
+  --statuses-warning-text-default: #000000;
+  --accents-secondary-base-default: #BD99F8;
+  --accents-secondary-text-default: #000000;
+  --statuses-highlight-base-action: #4EAD9F;
+  --statuses-highlight-base-active: #72FFEA;
+  --statuses-highlight-text-action: #000000;
+  --statuses-highlight-text-active: #000000;
+  --statuses-negative-base-default: #ffffff;
+  --statuses-negative-text-default: #000000;
+  --statuses-positive-base-default: #000000;
+  --statuses-positive-text-default: #ffffff;
+  --controls-end-icon-active-action: #B3B3B3;
+  --externalBrand-apple-base-action: #e6e6e6;
+  --externalBrand-apple-base-active: #ffffff;
+  --externalBrand-apple-text-action: #000000;
+  --externalBrand-apple-text-active: #000000;
+  --statuses-highlight-base-default: #72FFEA;
+  --statuses-highlight-text-default: #000000;
+  --externalBrand-apple-base-default: #ffffff;
+  --externalBrand-apple-text-default: #000000;
+  --externalBrand-google-base-action: #c2c2c2;
+  --externalBrand-google-base-active: #f2f2f2;
+  --externalBrand-google-text-action: #1f1f1f;
+  --externalBrand-google-text-active: #1f1f1f;
+  --statuses-information-base-action: #8168A9;
+  --statuses-information-base-active: #BD99F8;
+  --statuses-information-text-action: #000000;
+  --statuses-information-text-active: #000000;
+  --absolute-black-base-action-active: #313131;
+  --absolute-black-text-active-action: #ffffff;
+  --absolute-white-base-action-active: #ECECEC;
+  --absolute-white-text-active-action: #000000;
+  --controls-background-active-action: #212121;
+  --controls-start-icon-active-action: #B3B3B3;
+  --externalBrand-google-base-default: #f2f2f2;
+  --externalBrand-google-text-default: #1f1f1f;
+  --statuses-error-base-active-action: #A52343;
+  --statuses-error-text-active-action: #000000;
+  --statuses-information-base-default: #BD99F8;
+  --statuses-information-text-default: #000000;
+  --accents-primary-base-active-action: #9E3D7A;
+  --accents-primary-text-active-action: #000000;
+  --controls-placeholder-active-action: #737373;
+  --externalBrand-facebook-base-action: #0050d1;
+  --externalBrand-facebook-base-active: #0766ff;
+  --externalBrand-facebook-text-action: #ffffff;
+  --externalBrand-facebook-text-active: #ffffff;
+  --accents-tertiary-base-active-action: #080808;
+  --accents-tertiary-text-active-action: #ffffff;
+  --controls-slider-thumb-active-action: #F1F1F1;
+  --controls-slider-track-active-action: #FFFFFF;
+  --externalBrand-facebook-base-default: #0766ff;
+  --externalBrand-facebook-text-default: #ffffff;
+  --statuses-success-base-active-action: #45A455;
+  --statuses-success-text-active-action: #000000;
+  --statuses-warning-base-active-action: #D69200;
+  --statuses-warning-text-active-action: #000000;
+  --accents-secondary-base-active-action: #8168A9;
+  --accents-secondary-text-active-action: #000000;
+  --statuses-negative-base-active-action: #B4B4B4;
+  --statuses-negative-text-active-action: #000000;
+  --statuses-positive-base-active-action: #787878;
+  --statuses-positive-text-active-action: #ffffff;
+  --statuses-highlight-base-active-action: #4EAD9F;
+  --statuses-highlight-text-active-action: #000000;
+  --externalBrand-apple-base-active-active: #e6e6e6;
+  --externalBrand-apple-text-active-action: #000000;
+  --externalBrand-google-base-active-active: #c2c2c2;
+  --externalBrand-google-text-active-action: #1f1f1f;
+  --statuses-information-base-active-action: #8168A9;
+  --statuses-information-text-active-action: #000000;
+  --externalBrand-facebook-base-active-active: #0050d1;
+  --externalBrand-facebook-text-active-action: #ffffff;
+}
+:root.tab-enabled *[tabindex]:focus {
+  outline-color: var(--tab-outline-color);
+  outline-style: auto;
+  outline-width: 2px;
+  outline-offset: -1px;
+}
+:root.tab-disabled *[tabindex]:focus {
+  outline: none;
+}
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="button, Unthemed">
+</style><style data-jss="" data-meta="button-skin, Unthemed">
+</style><style data-jss="" data-meta="text, Unthemed">
+</style><style data-jss="" data-meta="image-frame, Unthemed">
+</style><style data-jss="" data-meta="grid, Unthemed">
+</style><style data-jss="" data-meta="aside, Unthemed">
+.aside-ratioWrapper-0-2-89 {
+  height: 150px;
+  min-width: 97px;
+}
+.aside-ratio-0-2-90 {
+  gap: var(--spacing-10);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aside-thumbnail-0-2-91 {
+  width: 100%;
+}
+.aside-cardText-0-2-92 {
+  text-align: center;
+}
+.aside-ScrollBox-0-2-93 {
+  width: calc(100% + 8px);
+  overflow: scroll;
+  padding-right: 8px;
+  scroll-behavior: smooth;
+}
+@supports (-moz-appearance:none) {
+  .aside-ScrollBox-0-2-93 {
+    scrollbar-color: var(--controls-border-default) transparent;
+    scrollbar-width: thin;
+  }
+}
+.aside-ScrollBox-0-2-93::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.aside-ScrollBox-0-2-93::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: transparent;
+}
+.aside-ScrollBox-0-2-93::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: var(--controls-border-default);
+}
+.aside-ScrollBox-0-2-93::-webkit-scrollbar-corner {
+  background: transparent;
+}
+</style><style data-jss="" data-meta="svg-icon, Unthemed">
+.svg-icon-root-0-2-214 {
+  overflow: hidden;
+  user-select: none;
+}
+.svg-icon-root-0-2-214 > svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+</style><style data-jss="" data-meta="aside, Unthemed">
+.aside-imageFrame-0-2-206[data-interactable][data-active] {
+  border-width: 1px;
+  --border-color: var(--accents-primary-base-default);
+}
+.aside-ratio-0-2-207 {
+  gap: var(--spacing-10);
+  display: flex;
+  padding: var(--spacing-6);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aside-cardText-0-2-208 {
+  display: -webkit-box;
+  overflow: hidden;
+  min-height: 28px;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.aside-socialIcon-0-2-209 {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="Unthemed">
+</style><style data-jss="" data-meta="resizer, Unthemed">
+</style><style data-jss="" data-meta="aside, Unthemed">
+.aside-resetContainer-0-2-8 {
+  gap: var(--spacing-12);
+  left: 360px;
+  bottom: var(--spacing-10);
+  display: flex;
+  padding: 8px 0px;
+  position: absolute;
+  background: var(--backgrounds-tint-1);
+  align-items: center;
+  border-radius: var(--radius-8);
+}
+.aside-loading-0-2-9 {
+  margin-top: 44px;
+}
+.aside-notifier-0-2-10 {
+  z-index: 9999;
+}
+</style><script type="module" async="" fetchpriority="high" src="./pulse(2).js.download"></script><script type="text/javascript" async="" fetchpriority="high" nomodule="" src="./pulse(3).js.download"></script><link rel="modulepreload" as="script" crossorigin="" href="https://bc3cb073394c5cc3f3b8ba178077c6d773a5026e.miniapps-webapps.picsart.com/assets/index-DGoX6egA.js"><link rel="modulepreload" as="script" crossorigin="" href="./index-BxMWm5Z4.js.download"></head>
+<body style="background-color: var(--backgrounds-tint-2);">
+<div id="root"><div class="root-0-2-11 root-d0-0-2-12 size-0-2-13 size-d0-0-2-14 spacings-0-2-15 spacings-d0-0-2-16 layout-0-2-17 layout-d0-0-2-18 positions-0-2-19 positions-d0-0-2-20 borders-0-2-21 borders-d0-0-2-22" data-testid="view"><div id="ai_expand" class="root-0-2-23 root-d0-0-2-24 size-0-2-25 size-d0-0-2-26 spacings-0-2-27 spacings-d0-0-2-28 layout-0-2-29 layout-d0-0-2-30 positions-0-2-31 positions-d0-0-2-32 borders-0-2-33 borders-d0-0-2-34" data-testid="view"><div class="root-0-2-23 root-d5-0-2-35 size-0-2-25 size-d5-0-2-36 spacings-0-2-27 spacings-d5-0-2-37 layout-0-2-29 layout-d5-0-2-38 positions-0-2-31 positions-d5-0-2-39 borders-0-2-33 borders-d5-0-2-40" data-testid="view"><button type="button" class="button-skin-root-0-2-53 button-skin-root-d4-0-2-59 button-default-0-2-42 button-default-d2-0-2-48 button-interactive-0-2-43 button-interactive-d3-0-2-49" data-testid="button"><span class="button-skin-content-0-2-55"><svg width="24" height="24" fill="var(--texts-base)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.477 4.477a.668.668 0 0 1 .515-.235c.219 0 .399.078.54.235L12 10.945l6.469-6.468a.667.667 0 0 1 .515-.235c.22 0 .399.078.54.235.156.14.234.32.234.539a.667.667 0 0 1-.235.515L13.055 12l6.468 6.469c.157.14.235.32.235.539a.667.667 0 0 1-.235.515.693.693 0 0 1-.539.235.667.667 0 0 1-.515-.235L12 13.055l-6.469 6.468a.693.693 0 0 1-.539.235.667.667 0 0 1-.515-.235.668.668 0 0 1-.235-.515c0-.219.078-.399.235-.54L10.945 12 4.477 5.531a.668.668 0 0 1-.235-.515c0-.22.078-.399.235-.54z"></path></svg></span></button><span data-testid="text" class="text-root-0-2-61 text-root-d0-0-2-62">AI Expand</span></div><div class="root-0-2-23 root-d10-0-2-63 size-0-2-25 size-d10-0-2-64 spacings-0-2-27 spacings-d10-0-2-65 layout-0-2-29 layout-d10-0-2-66 positions-0-2-31 positions-d10-0-2-67 borders-0-2-33 borders-d10-0-2-68" data-testid="view"><button type="button" class="button-skin-root-0-2-53 button-skin-root-d14-0-2-74 button-default-0-2-42 button-default-d11-0-2-69 button-interactive-0-2-43 button-interactive-d12-0-2-70" data-testid="button"><span class="button-skin-content-0-2-55">Apply</span></button></div></div><div class="root-0-2-11 root-d5-0-2-76 size-0-2-13 size-d5-0-2-77 spacings-0-2-15 spacings-d5-0-2-78 layout-0-2-17 layout-d5-0-2-79 positions-0-2-19 positions-d5-0-2-80 borders-0-2-21 borders-d5-0-2-81" data-testid="view"><div id="sidebar-web" class="root-0-2-11 root-d10-0-2-82 size-0-2-13 size-d10-0-2-83 spacings-0-2-15 spacings-d10-0-2-84 layout-0-2-17 layout-d10-0-2-85 positions-0-2-19 positions-d10-0-2-86 borders-0-2-21 borders-d10-0-2-87" data-testid="view"><span data-testid="text" class="text-root-0-2-61 text-root-d5-0-2-88">Select the ratio or drag the handles to expand.</span><div class="root-0-2-23 root-d15-0-2-94 size-0-2-25 size-d15-0-2-95 spacings-0-2-27 spacings-d15-0-2-96 layout-0-2-29 layout-d15-0-2-97 positions-0-2-31 positions-d15-0-2-98 borders-0-2-33 borders-d15-0-2-99 aside-ScrollBox-0-2-93" data-testid="view"><div class="grid-root-0-2-100 grid-root-d0-0-2-101" data-testid="grid"><div class="image-frame-root-0-2-211 image-frame-root-d2-0-2-213 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true" data-active="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><i class="svg-icon-root-0-2-214 rc-svg-icon aside-socialIcon-0-2-209" role="presentation" aria-label="Original size"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.8153 2.47906C17.0844 2.47906 17.3025 2.69984 17.3025 2.97219V18.7524C17.3025 19.0247 17.0844 19.2455 16.8153 19.2455H5.12239C4.85331 19.2455 4.63518 19.0247 4.63518 18.7524V2.97219C4.63518 2.69984 4.85331 2.47906 5.12239 2.47906H16.8153Z" fill="white"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.3023 18.7665V2.95808C17.3023 2.69352 17.0923 2.47904 16.8332 2.47904H5.10418C4.84507 2.47904 4.63502 2.69352 4.63502 2.95808V18.7665C4.63502 19.031 4.84507 19.2455 5.10418 19.2455H16.8332C17.0923 19.2455 17.3023 19.031 17.3023 18.7665ZM17.7715 2.95808C17.7715 2.42895 17.3514 2 16.8332 2H5.10418C4.58596 2 4.16586 2.42895 4.16586 2.95808V18.7665C4.16586 19.2956 4.58596 19.7246 5.10418 19.7246H16.8332C17.3514 19.7246 17.7715 19.2956 17.7715 18.7665V2.95808Z" fill="#DADBE8"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.60068 21.077C4.64648 21.1238 4.64648 21.1996 4.60068 21.2464L4.33175 21.521L4.60068 21.7956C4.64648 21.8423 4.64648 21.9182 4.60068 21.9649C4.55487 22.0117 4.48061 22.0117 4.43481 21.9649L4.08306 21.6058L4 21.521L4.43481 21.077C4.48061 21.0302 4.55487 21.0302 4.60068 21.077Z" fill="#B5BCD6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.537 21.6407H4.2832V21.4012H17.537V21.6407Z" fill="#B5BCD6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.2196 21.9649C17.1738 21.9182 17.1738 21.8423 17.2196 21.7956L17.4886 21.521L17.2196 21.2464C17.1738 21.1996 17.1738 21.1238 17.2196 21.077C17.2654 21.0302 17.3397 21.0302 17.3855 21.077L17.7373 21.4362L17.8203 21.521L17.3855 21.9649C17.3397 22.0117 17.2654 22.0117 17.2196 21.9649Z" fill="#B5BCD6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.9656 2.62358C19.9198 2.67035 19.8456 2.67035 19.7998 2.62358L19.5308 2.34899L19.2619 2.62358C19.2161 2.67035 19.1418 2.67035 19.096 2.62358C19.0502 2.57682 19.0502 2.50099 19.096 2.45422L19.4478 2.09506L19.5308 2.01025L19.9656 2.45422C20.0115 2.50099 20.0115 2.57682 19.9656 2.62358Z" fill="#B5BCD6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.4136 19.6647V2.17963H19.6482V19.6647H19.4136Z" fill="#B5BCD6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.0959 19.3405C19.1417 19.2937 19.2159 19.2937 19.2617 19.3405L19.5307 19.6151L19.7996 19.3405C19.8454 19.2937 19.9197 19.2937 19.9655 19.3405C20.0113 19.3872 20.0113 19.4631 19.9655 19.5098L19.6137 19.869L19.5307 19.9538L19.0959 19.5098C19.0501 19.4631 19.0501 19.3872 19.0959 19.3405Z" fill="#B5BCD6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.6107 8.94608H11.907V8.46704H13.0799V9.66464H12.6107V8.94608Z" fill="#B5BCD6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.32629 8.94608H10.03V8.46704H8.85713V9.66464H9.32629V8.94608Z" fill="#B5BCD6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.32629 12.7784H10.03V13.2575H8.85713V12.0599H9.32629V12.7784Z" fill="#B5BCD6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.6109 12.7784V12.0599H13.0801V13.2575H11.9072V12.7784H12.6109Z" fill="#B5BCD6"></path>
+</svg>
+</i><span data-testid="text" class="text-root-0-2-61 text-root-d10-0-2-215 aside-cardText-0-2-208">Original</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d7-0-2-216 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./04200937348740345140.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d15-0-2-217 aside-cardText-0-2-208">Instagram Story</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d12-0-2-218 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./46262792002726125055.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d20-0-2-219 aside-cardText-0-2-208">Youtube Thumbnail</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d17-0-2-220 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./30814504454691257662.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d25-0-2-221 aside-cardText-0-2-208">Facebook Profile</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d22-0-2-222 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./e9079d43-3118-4b8b-87f8-ae04bbfaeac6.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d30-0-2-223 aside-cardText-0-2-208">Banner</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d27-0-2-224 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./d42d16d4-81b3-4fc1-a9c6-c6c380e18a48.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d35-0-2-225 aside-cardText-0-2-208">Large Rectangle</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d32-0-2-226 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./93de1afa-230f-4681-b652-9615d0a4fbc7.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d40-0-2-227 aside-cardText-0-2-208">LinkedIn Post</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d37-0-2-228 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./4e3a7074-61f8-4729-af70-bb34589270fe.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d45-0-2-229 aside-cardText-0-2-208">X post</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d42-0-2-230 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./6fac7e71-5585-4d6e-82fa-220342f49b5a.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d50-0-2-231 aside-cardText-0-2-208">Billboard</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d47-0-2-232 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./1401b7e5-6969-4fc9-aaff-36831e952160.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d55-0-2-233 aside-cardText-0-2-208">Mobile Banner</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d52-0-2-234 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./19007669414119333513.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d60-0-2-235 aside-cardText-0-2-208">Desktop Wallpaper Background</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d57-0-2-236 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./89691998711950318108.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d65-0-2-237 aside-cardText-0-2-208">Instagram Portrait</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d62-0-2-238 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./06331159612813339213.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d70-0-2-239 aside-cardText-0-2-208">Instagram Square</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d67-0-2-240 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./71806704682349564131.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d75-0-2-241 aside-cardText-0-2-208">Facebook Post</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d72-0-2-242 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./61623907981516792821.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d80-0-2-243 aside-cardText-0-2-208">Logo</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d77-0-2-244 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./11528962798437347155.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d85-0-2-245 aside-cardText-0-2-208">Facebook Story</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d82-0-2-246 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./54cf0d5b-41f3-451f-a714-e2fc58df1e65.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d90-0-2-247 aside-cardText-0-2-208">Leaderboard</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d87-0-2-248 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./2dc34c81-ee07-4553-83fe-4e29f76ac8bd.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d95-0-2-249 aside-cardText-0-2-208">Portrait</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d92-0-2-250 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./89229587157133441660.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d100-0-2-251 aside-cardText-0-2-208">Facebook Cover Photo</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d97-0-2-252 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./08102511476160809979.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d105-0-2-253 aside-cardText-0-2-208">Facebook Event Cover</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d102-0-2-254 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./19131343840383786102.svg" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d110-0-2-255 aside-cardText-0-2-208">LinkedIn Personal Banner</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d107-0-2-256 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./32a4b17f-f198-4116-8783-07d3205fee7c.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d115-0-2-257 aside-cardText-0-2-208">X Header</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d112-0-2-258 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./de3ebd86-0b18-4c8f-a048-c7bc40f019fb.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d120-0-2-259 aside-cardText-0-2-208">Small Square</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d117-0-2-260 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./4dacc027-9fef-4411-84f7-b7b30a20232b.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d125-0-2-261 aside-cardText-0-2-208">Half Page</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d122-0-2-262 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./30963160134680498233.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d130-0-2-263 aside-cardText-0-2-208">YouTube Cover</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d127-0-2-264 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./58333789276794295071.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d135-0-2-265 aside-cardText-0-2-208">Pinterest Pin</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d132-0-2-266 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./83407477196473420979.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d140-0-2-267 aside-cardText-0-2-208">Postcard</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d137-0-2-268 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./57320820645175812953.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d145-0-2-269 aside-cardText-0-2-208">Invitation (5x7)</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d142-0-2-270 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./b1a48812-7e25-4e7b-ac21-cba2450b5e8b.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d150-0-2-271 aside-cardText-0-2-208">Large Mobile Banner</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d147-0-2-272 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./98162080-5b70-4136-87a3-600e283f735f.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d155-0-2-273 aside-cardText-0-2-208">Large Leaderboard</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d152-0-2-274 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./21ca0474-09a2-41f7-847f-cc8551b32309.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d160-0-2-275 aside-cardText-0-2-208">Twitch Cover</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d157-0-2-276 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./26221686091728967451.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d165-0-2-277 aside-cardText-0-2-208">Business Card</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d162-0-2-278 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./448cf8b4-6202-4c1f-8957-93037c38ac7e.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d170-0-2-279 aside-cardText-0-2-208">X Profile</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d167-0-2-280 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./97478234566443742165.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d175-0-2-281 aside-cardText-0-2-208">LinkedIn Company Banner</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d172-0-2-282 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./20ddd340-d4ad-4cfe-a777-6a8b852f5540.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d180-0-2-283 aside-cardText-0-2-208">Medium Rectangle</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d177-0-2-284 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./eecc4996-5955-466f-9437-d1508f250c01.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d185-0-2-285 aside-cardText-0-2-208">News Feeds &amp; Right-hand Column Ads</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d182-0-2-286 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./028dd789-0b33-413b-8c82-6ed8529b2bd2.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d190-0-2-287 aside-cardText-0-2-208">Wide Skyscraper</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d187-0-2-288 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./0cbf9b6d-72ed-418b-9cac-46e4e8390907.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d195-0-2-289 aside-cardText-0-2-208">Square</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d192-0-2-290 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./72a3c0d2-de3a-4c98-8aa7-a608907e4ca0.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d200-0-2-291 aside-cardText-0-2-208">Feed Image &amp; Audience Network</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d197-0-2-292 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./79978794743106503759.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d205-0-2-293 aside-cardText-0-2-208">Pinterest Long Pin</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d202-0-2-294 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./83264431531832040949.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d210-0-2-295 aside-cardText-0-2-208">YouTube Profile</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d207-0-2-296 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./14102374212045559828.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d215-0-2-297 aside-cardText-0-2-208">Youtube End Screen</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d212-0-2-298 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./2452d903-c3ec-44d8-a699-f232b7080c8f.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d220-0-2-299 aside-cardText-0-2-208">Smartphone Interstitial  Landscape</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d217-0-2-300 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./d875625f-4b46-4962-9a17-aa4b6f0653cd.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d225-0-2-301 aside-cardText-0-2-208">Smartphone Interstitial Portrait</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d222-0-2-302 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./3711b674-cfc0-4301-9f69-469c69f31999.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d230-0-2-303 aside-cardText-0-2-208">Tablet Interstitial Landscape</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d227-0-2-304 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./e2c629fb-10a9-4811-b126-645c2709f405.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d235-0-2-305 aside-cardText-0-2-208">Tablet Interstitial Portrait</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d232-0-2-306 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./77680256226299244194.svg" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d240-0-2-307 aside-cardText-0-2-208">Email Header</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d237-0-2-308 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./49415351375848653696.svg" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d245-0-2-309 aside-cardText-0-2-208">Blog Banner</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d242-0-2-310 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./16675424276690650767.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d250-0-2-311 aside-cardText-0-2-208">Pinterest Profile</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d247-0-2-312 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./60838343798712100977.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d255-0-2-313 aside-cardText-0-2-208">1 : 1 (Square)</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d252-0-2-314 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./28118293989772265303.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d260-0-2-315 aside-cardText-0-2-208">3 : 4 (Portrait)</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d257-0-2-316 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./25909496895993945762.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d265-0-2-317 aside-cardText-0-2-208">3 : 2 (Mid)</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d262-0-2-318 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./41402004416058910610.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d270-0-2-319 aside-cardText-0-2-208">2 : 1 (Wide)</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d267-0-2-320 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./56008321676104677318.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d275-0-2-321 aside-cardText-0-2-208">16 : 9 (Landscape)</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d272-0-2-322 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./53529022005621099352.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d280-0-2-323 aside-cardText-0-2-208">Etsy Shop Cover</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d277-0-2-324 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./21519051883473509016.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d285-0-2-325 aside-cardText-0-2-208">T-shirt</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d282-0-2-326 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./91671934362972187875.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d290-0-2-327 aside-cardText-0-2-208">Podcast Cover</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d287-0-2-328 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./15301596576668090656.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d295-0-2-329 aside-cardText-0-2-208">Twitch Offline Banner</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d292-0-2-330 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./93032874831304824828.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d300-0-2-331 aside-cardText-0-2-208">Patreon Cover</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d297-0-2-332 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./68797570703808625714.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d305-0-2-333 aside-cardText-0-2-208">Iphone x Background</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d302-0-2-334 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./16410258242158704905.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d310-0-2-335 aside-cardText-0-2-208">Zoom Background</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d307-0-2-336 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./73364663943835844290.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d315-0-2-337 aside-cardText-0-2-208">Flyer (8.5x11)</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d312-0-2-338 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./68228810194947018850.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d320-0-2-339 aside-cardText-0-2-208">Poster (11x17)</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d317-0-2-340 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./29745933558105623372.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d325-0-2-341 aside-cardText-0-2-208">Media Kit</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d322-0-2-342 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./05656322444961480475.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d330-0-2-343 aside-cardText-0-2-208">Album Cover</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d327-0-2-344 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./88370573001599739059.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d335-0-2-345 aside-cardText-0-2-208">Gift Certificate</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d332-0-2-346 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./04625253555686156392.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d340-0-2-347 aside-cardText-0-2-208">Greeting Card (5x7)</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d337-0-2-348 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./17806797589722047195.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d345-0-2-349 aside-cardText-0-2-208">Letterhead (8.5x11)</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d342-0-2-350 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./74188780515549354189.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d350-0-2-351 aside-cardText-0-2-208">Infographic</span></div></div><div class="image-frame-root-0-2-211 image-frame-root-d347-0-2-352 aside-imageFrame-0-2-206" tabindex="0" data-testid="image-frame" data-interactable="true"><div class="image-frame-content-0-2-212 aside-ratio-0-2-207"><img src="./60215016110415903471.png" alt="ratio" height="auto" style="max-width: 100%;"><span data-testid="text" class="text-root-0-2-61 text-root-d355-0-2-353 aside-cardText-0-2-208">Lesson Plan</span></div></div></div></div><div class="root-0-2-11 root-d15-0-2-104 size-0-2-13 size-d15-0-2-105 spacings-0-2-15 spacings-d15-0-2-106 layout-0-2-17 layout-d15-0-2-107 positions-0-2-19 positions-d15-0-2-108 borders-0-2-21 borders-d15-0-2-109" data-testid="view"><button type="button" class="button-skin-root-0-2-53 button-skin-root-d24-0-2-115 button-default-0-2-42 button-default-d20-0-2-110 button-interactive-0-2-43 button-interactive-d21-0-2-111" data-testid="button" style="font-weight: 600;"><span class="button-skin-content-0-2-55">Custom expand</span></button></div><div class="root-0-2-11 root-d20-0-2-117 size-0-2-13 size-d20-0-2-118 spacings-0-2-15 spacings-d20-0-2-119 layout-0-2-17 layout-d20-0-2-120 positions-0-2-19 positions-d20-0-2-121 borders-0-2-21 borders-d20-0-2-122" data-testid="view" style="margin-top: auto; margin-bottom: var(--spacing-12);"></div></div><div class="root-0-2-23 root-d20-0-2-123 size-0-2-25 size-d20-0-2-124 spacings-0-2-27 spacings-d20-0-2-125 layout-0-2-29 layout-d20-0-2-126 positions-0-2-31 positions-d20-0-2-127 borders-0-2-33 borders-d20-0-2-128" data-testid="view" style="position: relative; height: calc(100% - 30px); max-width: 100%; margin: 5px; width: 1180px;"><div class="root-0-2-11 root-d25-0-2-188 size-0-2-13 size-d25-0-2-189 spacings-0-2-15 spacings-d25-0-2-190 layout-0-2-17 layout-d25-0-2-191 positions-0-2-19 positions-d25-0-2-192 borders-0-2-21 borders-d25-0-2-193 resizer-canvasContainer-0-2-164 resizer-canvasContainer-d0-0-2-182" data-testid="view"><div aria-hidden="true" data-testid="crop-base-box" class="root-0-2-11 root-d30-0-2-194 size-0-2-13 size-d30-0-2-195 spacings-0-2-15 spacings-d30-0-2-196 layout-0-2-17 layout-d30-0-2-197 positions-0-2-19 positions-d30-0-2-198 borders-0-2-21 borders-d30-0-2-199 resizer-imageContainer-0-2-165 resizer-imageContainer-d1-0-2-183"><img id="image" alt="resizable" src="blob:https://bc3cb073394c5cc3f3b8ba178077c6d773a5026e.miniapps-webapps.picsart.com/6c434b79-7c92-42c8-9896-855513ba93bb" class="resizer-image-0-2-180 resizer-image-d5-0-2-187"></div><div id="resizerId" aria-hidden="true" data-testid="crop-base-box1" class="root-0-2-11 root-d35-0-2-200 size-0-2-13 size-d35-0-2-201 spacings-0-2-15 spacings-d35-0-2-202 layout-0-2-17 layout-d35-0-2-203 positions-0-2-19 positions-d35-0-2-204 borders-0-2-21 borders-d35-0-2-205 resizer-boxWrap-0-2-166 resizer-boxWrap-d2-0-2-184"><div class="resizer-option-0-2-167 resizer-optionMiddle-0-2-175 resizer-optionMiddleTop-0-2-176" aria-hidden="true" data-direction="top"><div class="resizer-optionInner-0-2-168 resizer-optionInner-d3-0-2-185" aria-hidden="true" data-direction="top" style="cursor: ns-resize;"></div></div><div class="resizer-option-0-2-167 resizer-optionCorner-0-2-170 resizer-optionRightTop-0-2-172" aria-hidden="true" data-direction="top-right"><div class="resizer-optionCornerInner-0-2-169 resizer-optionCornerInner-d4-0-2-186" aria-hidden="true" data-direction="top-right" style="cursor: nesw-resize;"></div></div><div class="resizer-option-0-2-167 resizer-optionMiddle-0-2-175 resizer-optionMiddleRight-0-2-177" aria-hidden="true" data-direction="right"><div class="resizer-optionInner-0-2-168 resizer-optionInner-d3-0-2-185" aria-hidden="true" data-direction="right" style="cursor: ew-resize;"></div></div><div class="resizer-option-0-2-167 resizer-optionCorner-0-2-170 resizer-optionRightBottom-0-2-173" aria-hidden="true" data-direction="bottom-right"><div class="resizer-optionCornerInner-0-2-169 resizer-optionCornerInner-d4-0-2-186" aria-hidden="true" data-direction="bottom-right" style="cursor: nwse-resize;"></div></div><div class="resizer-option-0-2-167 resizer-optionMiddle-0-2-175 resizer-optionMiddleBottom-0-2-178" aria-hidden="true" data-direction="bottom"><div class="resizer-optionInner-0-2-168 resizer-optionInner-d3-0-2-185" aria-hidden="true" data-direction="bottom" style="cursor: ns-resize;"></div></div><div class="resizer-option-0-2-167 resizer-optionCorner-0-2-170 resizer-optionLeftBottom-0-2-174" aria-hidden="true" data-direction="bottom-left"><div class="resizer-optionCornerInner-0-2-169 resizer-optionCornerInner-d4-0-2-186" aria-hidden="true" data-direction="bottom-left" style="cursor: nesw-resize;"></div></div><div class="resizer-option-0-2-167 resizer-optionMiddle-0-2-175 resizer-optionMiddleLeft-0-2-179" aria-hidden="true" data-direction="left"><div class="resizer-optionInner-0-2-168 resizer-optionInner-d3-0-2-185" aria-hidden="true" data-direction="left" style="cursor: ew-resize;"></div></div><div class="resizer-option-0-2-167 resizer-optionCorner-0-2-170 resizer-optionLeftTop-0-2-171" aria-hidden="true" data-direction="top-left"><div class="resizer-optionCornerInner-0-2-169 resizer-optionCornerInner-d4-0-2-186" aria-hidden="true" data-direction="top-left" style="cursor: nwse-resize;"></div></div></div></div></div></div><div class="aside-resetContainer-0-2-8"><a height="auto" class="button-skin-root-0-2-53 button-skin-root-d34-0-2-134 button-default-0-2-42 button-default-d29-0-2-129 button-interactive-0-2-43 button-interactive-d30-0-2-130" data-testid="button"><svg width="24" height="24" fill="var(--texts-tint-1)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" cursor="pointer"><path d="M19.992 3.258a.73.73 0 0 1 .54.21c.14.141.21.321.21.54V9.75H19.5 15a.782.782 0 0 1-.54-.21.782.782 0 0 1-.21-.54c0-.203.07-.375.21-.516A.741.741 0 0 1 15 8.25h3.258a8.67 8.67 0 0 0-.938-1.195 6.585 6.585 0 0 0-1.383-1.125 7.33 7.33 0 0 0-1.757-.844c-.657-.219-1.383-.328-2.18-.328-1 0-1.883.164-2.648.492-.782.328-1.454.727-2.016 1.195a7.265 7.265 0 0 0-1.383 1.5c-.36.516-.61.961-.75 1.336a.795.795 0 0 1-.422.422.704.704 0 0 1-.562 0 .807.807 0 0 1-.422-.398.761.761 0 0 1 0-.586c.187-.453.492-.992.914-1.617.422-.625.969-1.22 1.64-1.782.688-.578 1.5-1.07 2.438-1.476.938-.39 2.008-.586 3.211-.586.89 0 1.71.11 2.46.328.75.234 1.423.531 2.017.89.609.36 1.14.766 1.593 1.22.47.452.86.906 1.172 1.359V4.008a.73.73 0 0 1 .211-.54.782.782 0 0 1 .54-.21zM4.477 14.25h-1.22v5.742c0 .219.071.399.212.54.14.14.32.21.539.21.203 0 .375-.07.515-.21a.693.693 0 0 0 .235-.54v-3.047c.312.453.703.907 1.172 1.36.453.453.976.86 1.57 1.218.61.36 1.29.657 2.04.891.75.219 1.57.328 2.46.328 1.203 0 2.273-.195 3.21-.586.938-.406 1.743-.89 2.415-1.453.688-.578 1.242-1.18 1.664-1.805.422-.625.727-1.164.914-1.617a.647.647 0 0 0-.023-.562.702.702 0 0 0-.984-.399.713.713 0 0 0-.4.399c-.14.375-.39.82-.75 1.336a7.268 7.268 0 0 1-1.382 1.5c-.562.468-1.234.867-2.016 1.195-.765.328-1.648.492-2.648.492-.797 0-1.523-.11-2.18-.328a8.48 8.48 0 0 1-1.78-.82 7.546 7.546 0 0 1-1.36-1.149 8.67 8.67 0 0 1-.938-1.195H9c.203 0 .375-.07.516-.21A.741.741 0 0 0 9.75 15a.667.667 0 0 0-.234-.516A.667.667 0 0 0 9 14.25H4.5h-.023z"></path></svg></a><a height="auto" type="button" class="button-skin-root-0-2-53 button-skin-root-d44-0-2-141 button-default-0-2-42 button-default-d38-0-2-136 button-interactive-0-2-43 button-interactive-d39-0-2-137" data-testid="button"><span class="button-skin-content-0-2-55"><svg width="24" height="24" fill="var(--texts-tint-1)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" cursor="pointer"><path d="M7.383 4.242c.14.14.203.32.187.54 0 .202-.07.374-.21.515L4.733 7.78h10.547c.922 0 1.79.18 2.602.54a6.9 6.9 0 0 1 2.156 1.452 6.65 6.65 0 0 1 1.43 2.133c.36.828.539 1.703.539 2.625v4.711a.693.693 0 0 1-.235.54.701.701 0 0 1-.515.21.782.782 0 0 1-.54-.21.73.73 0 0 1-.21-.54v-4.71c0-.72-.14-1.4-.422-2.04a4.899 4.899 0 0 0-1.125-1.664 5.474 5.474 0 0 0-1.64-1.125 5.017 5.017 0 0 0-2.04-.422H4.734L7.36 11.79c.141.14.211.32.211.54a.628.628 0 0 1-.187.515.75.75 0 0 1-.516.258.741.741 0 0 1-.539-.235l-4.172-3.96a.444.444 0 0 1-.164-.352.47.47 0 0 1 .164-.375l4.172-3.985a.697.697 0 0 1 .54-.187c.202 0 .374.078.515.234z"></path></svg></span></a><a height="auto" type="button" class="button-skin-root-0-2-53 button-skin-root-d54-0-2-148 button-default-0-2-42 button-default-d47-0-2-143 button-disabled-0-2-46" data-testid="button"><span class="button-skin-content-0-2-55"><svg width="24" height="24" fill="var(--texts-tint-1)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" cursor="pointer"><path d="M16.617 4.242a.73.73 0 0 0-.21.54.792.792 0 0 0 .234.515l2.625 2.484H8.719c-.922 0-1.79.18-2.602.54a6.899 6.899 0 0 0-2.156 1.452 6.648 6.648 0 0 0-1.43 2.133 6.524 6.524 0 0 0-.539 2.625v4.711c0 .219.07.399.211.54.156.14.336.21.54.21.202 0 .374-.07.515-.21a.693.693 0 0 0 .234-.54v-4.71c0-.72.14-1.4.422-2.04a5.074 5.074 0 0 1 1.102-1.664A5.79 5.79 0 0 1 6.68 9.703a5.017 5.017 0 0 1 2.039-.422h10.547L16.64 11.79a.817.817 0 0 0-.235.54c0 .202.07.374.211.515a.75.75 0 0 0 .516.258.741.741 0 0 0 .539-.235l4.172-3.96a.444.444 0 0 0 .164-.352.47.47 0 0 0-.164-.375l-4.172-3.985a.697.697 0 0 0-.54-.187.668.668 0 0 0-.515.234z"></path></svg></span></a><a height="auto" type="button" class="button-skin-root-0-2-53 button-skin-root-d64-0-2-155 button-default-0-2-42 button-default-d56-0-2-150 button-interactive-0-2-43 button-interactive-d57-0-2-151" data-testid="button"><span class="button-skin-content-0-2-55"><svg width="24" height="24" fill="var(--texts-tint-1)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" cursor="pointer"><path d="M11.742 7.992a.701.701 0 0 0-.21-.515.693.693 0 0 0-.54-.235.741.741 0 0 0-.539.235.701.701 0 0 0-.21.515v2.25h-2.25a.74.74 0 0 0-.54.235.701.701 0 0 0-.21.515c0 .219.07.399.21.54.156.14.336.21.54.21h2.25v2.25c0 .219.07.399.21.54.156.14.336.21.54.21a.73.73 0 0 0 .538-.21.73.73 0 0 0 .211-.54v-2.25h2.25a.73.73 0 0 0 .54-.21.73.73 0 0 0 .21-.54.701.701 0 0 0-.21-.515.693.693 0 0 0-.54-.235h-2.25v-2.25zm-.75 12A8.772 8.772 0 0 1 7.5 19.29a9.03 9.03 0 0 1-2.86-1.922 9.03 9.03 0 0 1-1.921-2.86 8.584 8.584 0 0 1-.727-3.515c0-1.234.242-2.398.727-3.492A9.03 9.03 0 0 1 4.64 4.64 9.03 9.03 0 0 1 7.5 2.72a8.528 8.528 0 0 1 3.492-.727c1.25 0 2.422.242 3.516.727a9.03 9.03 0 0 1 2.86 1.922A9.03 9.03 0 0 1 19.288 7.5a8.772 8.772 0 0 1 .703 3.492 8.83 8.83 0 0 1-.703 3.516 9.03 9.03 0 0 1-1.922 2.86 9.03 9.03 0 0 1-2.86 1.921 8.83 8.83 0 0 1-3.515.703zm0-1.5a7.32 7.32 0 0 0 2.93-.586 7.521 7.521 0 0 0 3.984-3.984 7.32 7.32 0 0 0 .586-2.93c0-1.031-.195-2-.586-2.906a7.265 7.265 0 0 0-1.617-2.39 7.86 7.86 0 0 0-2.367-1.618 7.322 7.322 0 0 0-2.93-.586c-1.031 0-2 .196-2.906.586a7.777 7.777 0 0 0-2.39 1.617 7.777 7.777 0 0 0-1.618 2.39 7.263 7.263 0 0 0-.586 2.907c0 1.047.196 2.024.586 2.93a8.17 8.17 0 0 0 1.617 2.39 7.451 7.451 0 0 0 2.39 1.594c.907.39 1.876.586 2.907.586zm7.242-.258a.693.693 0 0 1 .54-.234c.218 0 .406.078.562.234l2.437 2.438a.767.767 0 0 1 0 1.101.767.767 0 0 1-1.101 0l-2.438-2.437a.767.767 0 0 1-.234-.563c0-.218.078-.398.234-.539z"></path></svg></span></a><a height="auto" type="button" class="button-skin-root-0-2-53 button-skin-root-d74-0-2-162 button-default-0-2-42 button-default-d65-0-2-157 button-interactive-0-2-43 button-interactive-d66-0-2-158" data-testid="button"><span class="button-skin-content-0-2-55"><svg width="24" height="24" fill="var(--texts-tint-1)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" cursor="pointer"><path d="M11.742 10.242h-3.75a.74.74 0 0 0-.539.235.701.701 0 0 0-.21.515c0 .219.07.399.21.54.156.14.336.21.54.21h6a.73.73 0 0 0 .538-.21.73.73 0 0 0 .211-.54.701.701 0 0 0-.21-.515.693.693 0 0 0-.54-.235h-2.25zm-.75 9.75A8.772 8.772 0 0 1 7.5 19.29a9.03 9.03 0 0 1-2.86-1.922 9.03 9.03 0 0 1-1.921-2.86 8.584 8.584 0 0 1-.727-3.515c0-1.234.242-2.398.727-3.492A9.03 9.03 0 0 1 4.64 4.64 9.03 9.03 0 0 1 7.5 2.72a8.528 8.528 0 0 1 3.492-.727c1.25 0 2.422.242 3.516.727a9.03 9.03 0 0 1 2.86 1.922A9.03 9.03 0 0 1 19.288 7.5a8.772 8.772 0 0 1 .703 3.492 8.83 8.83 0 0 1-.703 3.516 9.03 9.03 0 0 1-1.922 2.86 9.03 9.03 0 0 1-2.86 1.921 8.83 8.83 0 0 1-3.515.703zm0-1.5a7.32 7.32 0 0 0 2.93-.586 7.521 7.521 0 0 0 3.984-3.984 7.32 7.32 0 0 0 .586-2.93c0-1.031-.195-2-.586-2.906a7.265 7.265 0 0 0-1.617-2.39 7.86 7.86 0 0 0-2.367-1.618 7.322 7.322 0 0 0-2.93-.586c-1.031 0-2 .196-2.906.586a7.777 7.777 0 0 0-2.39 1.617 7.777 7.777 0 0 0-1.618 2.39 7.263 7.263 0 0 0-.586 2.907c0 1.047.196 2.024.586 2.93a8.17 8.17 0 0 0 1.617 2.39 7.451 7.451 0 0 0 2.39 1.594c.907.39 1.876.586 2.907.586zm7.242-.258a.693.693 0 0 1 .54-.234c.218 0 .406.078.562.234l2.437 2.438a.767.767 0 0 1 0 1.101.767.767 0 0 1-1.101 0l-2.438-2.437a.767.767 0 0 1-.234-.563c0-.218.078-.398.234-.539z"></path></svg></span></a></div></div></div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8bf467612ae0406f',t:'MTcyNTY4ODA0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(1).html"></iframe>
+
+</body></html>
